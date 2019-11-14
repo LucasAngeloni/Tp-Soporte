@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}
+Vinoteca
+{% endblock %}
+{% block content %}
+{% for value in vinos: %}
+{{ value["titulo"] }}
+{% endfor %}
+{% endblock %}

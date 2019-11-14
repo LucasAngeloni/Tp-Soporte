@@ -1,0 +1,30 @@
+body {
+   text-align: center;
+   }
+#principal {
+   display: block;
+   width: 500px;
+   margin: 50px auto;
+   padding: 15px;
+   text-align: center;
+   border: 1px solid #999999;
+   background: #DDDDDD;
+   outline: 2px dashed #000099;
+   outline-offset: 15px;
+
+   -webkit-transition: -webkit-transform 1s ease-in-out 0.5s;
+   -webkit-background: radial-gradient(center, circle, #FFFFFF 0%, #006699 200%);
+   }
+#principal:hover{
+   -moz-transform: rotate(5deg);
+   -webkit-transform: rotate(5deg);
+   }
+#titulo {
+   font: bold 36px MiNuevaFuente, verdana, sans-serif;
+   text-shadow: rgba(0,0,0,0.5) 3px 3px 5px;
+   color: hsla(120, 100%, 50%, 0.5);
+   }
+@font-face {
+   font-family: 'MiNuevaFuente';
+   src: url('SIXTY.TTF');
+   }

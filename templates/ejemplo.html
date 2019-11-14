@@ -1,0 +1,86 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% import "bootstrap/fixes.html" as fixes %}
+{% from "_render_elements.html" import render_vinos %}
+
+
+{% block head %}
+{{super()}}
+{{fixes.ie8()}}
+{%- endblock %}
+
+{% block content %}
+<style>
+  body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .container-narrow {
+    margin: 0 auto;
+    max-width: 700px;
+  }
+
+  .container-narrow > hr {
+    margin: 40px 0 0 0;
+    }
+  .jumbotron {
+    margin: 5px 0;
+    text-align: center;
+    background-color:white;
+  }
+  .jumbotron h1 {
+    font-size: 72px;
+    line-height: 1;
+    font-weight: bold;
+  }
+  .jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+   }
+   .marketing {
+    margin: 40px 0;
+    }
+
+  .marketing p + h4 {
+    margin-top: 28px;
+    }
+
+</style>
+<div class="container-narrow">
+    <h3 class="text-muted">Vinoteca</h3>
+    <hr>
+    <ul class="nav nav-pills pull-left">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <hr>
+    <div class="jumbotron">
+        <h1>Super awesome marketing speak!</h1>
+        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <a class="btn btn-large btn-success" href="#">Sign up today</a>
+    </div>
+    <div class="row marketing">
+        <div class="col-md-6">
+            <h4>Subheading</h4>
+            <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+            <h4>Subheading</h4>
+            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+            <h4>Subheading</h4>
+            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+
+        <div class="col-md-6">
+            <h4>Subheading</h4>
+            <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+            <h4>Subheading</h4>
+            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+            <h4>Subheading</h4>
+            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+    </div>
